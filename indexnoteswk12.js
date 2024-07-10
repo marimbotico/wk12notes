@@ -26,7 +26,7 @@ class HouseService {
         return $.get(this.url + `/${id}`);
     }
 
-    static createHouse(house) {
+    static createHouse(house) {jsjsjsjs
         return $.post(this.url, house);
     }
 
@@ -138,11 +138,11 @@ class DOMManager {
         }
     }
 }
-$('#create-new-house').click(() => {// this is not properly working
-    DOMManager.createHouse($('#new-house-name').val());
-    $('#new-house-name').val('');
-
-});
+    $('#create-new-house').click(() => {// this is not properly working
+        DOMManager.createHouse($('#new-house-name').val());
+        $('#new-house-name').val('');
+        
+    });
 
 DOMManager.getAllHouses();
 
